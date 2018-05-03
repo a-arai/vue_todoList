@@ -1,38 +1,58 @@
 body {
  font-size: 16px;
 }
-.container {
-    width: 300px;
+
+.todoList {
+    width: 600px;
     margin: auto;
 }
 
-#app h1 {
+.todoList__ttl {
     font-size: 16px;
     padding: 16px 0;
     border-bottom: 1px solid #666;
 }
-#app li {
-    line-height: 1.5;
-}
 
-#app input[type="text"] {
-    padding: 6px;
-}
-.command {
-    cursor: pointer;
-    color: #08c;
-}
-#app ul {
-    padding: 0;
-    list-style: none;
-}
-#app li > span.done {
-    text-decoration: line-through;
-    color: #bbb;
-}
-
-.info {
+.todoList__ttl__info {
     color: #bbb;
     font-size: 12px;
     font-weight: normal;
 }
+
+.todoList__ttl__allDelete {
+    float: right;
+}
+
+.todoList__itemWrap {
+    padding: 0;
+    list-style: none;
+}
+
+.todoList__listItem {
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.todoList__listItem:hover {
+    background-color: #E0F2F7
+}
+
+.todoList__listItem__delete {
+    cursor: pointer;
+    color: #08c;
+}
+
+.todoList__listItem > span.done {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.todoList__newItem {
+    padding: 6px;
+}
+
+
+
